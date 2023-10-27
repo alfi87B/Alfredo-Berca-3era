@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <link rel="stylesheet" href="./bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="nav-wrapper">
+        <section class="nav-log container row justify-content-center">
+            <div class="navlog-left col justify-content-start">
+                <a href="mailto:contacto@zeppelincloth.com">contacto@zeppelincloth.com</a>
+            </div>
+            <div class="navlo-right col justify-content-end">
+                <a href="#">Iniciar sesión</a>
+                <a href="#">Crear cuenta</a>
+            </div>
+        </section>
+        <nav class="menu-principal container">
+            <img class="menu-logo" src="../assets/img/logos/LOGOZtm-BLANCO.png" alt="" class="logo">
+            <img class="logo-resp" src="../assets/img/logos/Zep blanco-01-01.png" alt="" class="logo">
+            <div class="menu-burger">
+                <input type="checkbox" name="" id="toggle">
+                <label for="toggle"><i class="material-icons">menu</i></label>
+                <div class="menu">
+                    <ul>    
+                        <li><a href="../page/productos.html">PRODUCTOS</a></li>
+                        <li><a href="../page/contactos.html">CONTACTOS</a></li>
+                        <li><a href="../page/talles.html">TALLES</a></li>
+                        <li><a href="../page/locales.html">LOCALES</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="busca-cart">
+                <div class="buscador">
+                    <input type="text" placeholder="Buscar">
+                    <img src="../assets/img/imp-elementos/elementos-web-41.png" alt="Buscar">
+                </div>
+                <div class="cart">
+                    <img src="../assets/img/imp-elementos/carrito-3png.png" alt="">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="img-titulo container row justify-content-center">
+            <img src="../assets/img/img-extras/From-1linea-01.png" class="una-linea" alt="">
+            <img src="../assets/img/img-extras/From-2lineas-01.png" class="dos-lineas" alt="">
+        </div>
+        <section class="seccion-container container">
+            <h1 class="h1-secciones">COMPRA SIN SALIR DE CASA</h1>
+            <div class="seccion-info row container">
+                <article class="info-info col">
+                    <h3 class="info-titulo">ENVIO GRATIS</h3>
+                    <h4 class="info-detalle">Para compras de más de $19000</h4>
+                </article>
+                <article class="info-info col">
+                    <h3 class="info-titulo">HASTA 6 CUOTAS SIN INTERÉS</h3>
+                    <h4 class="info-detalle">Con todas las tarjetas de crédito</h4>
+                </article>
+                <article class="info-info col">
+                    <h3 class="info-titulo">ESTAMOS EN CONTACTO</h3>
+                    <h4 class="info-detalle">+543425142626</h4>
+                </article>
+            </div>
+        </section>
+        <button class="filtro" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Filtros</button>
+        <div class="filtro-div offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Filtro de busqueda</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="filtro-titulo">
+                    <li><h2>CATEGORIA</h2>
+                </ul>
+                <ul class="filtro-busqueda">
+                    <li>REMERAS</li>
+                    <li>INVIERNO</li>
+                    <li>SHORT</li>
+                    <li>GORRAS</li>
+                    <li>BOLSOS</li>
+                </ul>
+                <ul class="filtro-titulo">
+                    <li><h2>TALLES</h2>
+                </ul>
+                <ul class="filtro-busqueda">
+                    <li>S</li>
+                    <li>M</li>
+                    <li>L</li>
+                    <li>XL</li>
+                    <li>XXL</li>
+                </ul>
+                <ul class="filtro-titulo">
+                    <li><h2>COLOR</h2>
+                </ul>
+                <ul class="filtro-busqueda">
+                    <li>BLANCO</li>
+                    <li>NEGRO</li>
+                    <li>MOSTAZA</li>
+                    <li>VERDE</li>
+                    <li>AZUL</li>
+                </ul>
+            </div>
+        </div>
+        <section class="tienda-produ container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="card-conte col">
+                    <div class="card">
+                        <img src="../assets/img/foto-productos/Cigueña1.jpg" class="producto1" alt="Producto-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <h4 class="precios">$10000</h4>
+                            <p class="card-info">3 Cuotas sin interes</p>
+                            <button>Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="card-conte col">
+                    <div class="card">
+                        <img src="../assets/img/foto-productos/Cigueña1.jpg" class="producto1" alt="Producto-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <h4 class="precios">$10000</h4>
+                            <p class="card-info">3 Cuotas sin interes</p>
+                            <button>Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="card-conte col">
+                    <div class="card">
+                        <img src="../assets/img/foto-productos/Cigueña1.jpg" class="producto1" alt="Producto-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <h4 class="precios">$10000</h4>
+                            <p class="card-info">3 Cuotas sin interes</p>
+                            <button>Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="card-conte col">
+                    <div class="card">
+                        <img src="../assets/img/foto-productos/Cigueña1.jpg" class="producto1" alt="Producto-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <h4 class="precios">$10000</h4>
+                            <p class="card-info">3 Cuotas sin interes</p>
+                            <button>Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="card-conte col">
+                    <div class="card">
+                        <img src="../assets/img/foto-productos/Cigueña1.jpg" class="producto1" alt="Producto-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <h4 class="precios">$10000</h4>
+                            <p class="card-info">3 Cuotas sin interes</p>
+                            <button>Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="card-conte col">
+                    <div class="card">
+                        <img src="../assets/img/foto-productos/Cigueña1.jpg" class="producto1" alt="Producto-1">
+                        <div class="card-body">
+                            <h5 class="card-title">Nombre producto</h5>
+                            <h4 class="precios">$10000</h4>
+                            <p class="card-info">3 Cuotas sin interes</p>
+                            <button>Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <section class="footer-section container">
+            <div class="footer-column">
+                <p>NAVEGACIÓN</p>
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="../pages/contactos.html">CONTACTO</a></li>
+                    <li><a href="../pages/talles.html">GUIA DE TALLES</a></li>
+                    <li><a href="../pages/locales.html">LOCALES</a></li>
+                    <li><a href="../pages/politica-de-cambios.html">POLITICA DE CAMBIOS</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p>MEDIOS DE PAGO</p>
+                <ul class="medios-pago">
+                    <li class="credit-card"><img src="../assets/img/imp-elementos/tarjeta-de-credito.png" alt="PayPal"></li>
+                    <li class="credit-card"><img src="../assets/img/imp-elementos/tarjeta-de-credito.png" alt="Visa"></li>
+                    <li class="credit-card"><img src="../assets/img/imp-elementos/tarjeta-de-credito.png" alt="Mastercard"></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <p>ESTAMOS EN CONTACTO</p>
+                <ul class="contacto">
+                    <li><a href="mailto:contactos@zeppelincloth.com"><i class="footer-mail"></i><img src="../assets/img/imp-elementos/elementos-web-16.png" alt="contactos@zeppelincloth.com"></a></li>
+                    <li><a href="https://wa.me/543425142626" target="_blank"><img src="../assets/img/imp-elementos/elementos-web-40.png" alt="+543425142626"></a></li>
+                    <li><a href="https://www.instagram.com/zeppelincloth/" target="_blank"><img src="../assets/img/imp-elementos/instagram-3.png" alt="Instagram"></a></li>
+                    <li><a href="https://www.facebook.com/zeppelincloth/" target="_blank"><img src="../assets/img/imp-elementos/facebook.png" alt="Facebook"></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-copy">
+            <p class="copy">&copy; 2023 Zeppelin Cloth - Todos los derechos reservados</p>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="./bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
