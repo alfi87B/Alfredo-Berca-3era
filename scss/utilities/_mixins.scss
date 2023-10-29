@@ -1,0 +1,27 @@
+/**ejemplos**/
+@mixin flex($direction, $wrap, $justify, $align, $gap){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+}
+
+@mixin grid($col, $row, $area, $cgap, $rgap){
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+    grid-template-areas:  $area;
+    column-gap: $cgap;
+    row-gap: $rgap;
+}
+
+@mixin text($fsize, $weight, $txalign, $txdeco, $txcolor){
+    font-size: $fsize;
+    font-weight: $weight;
+    text-align: $txalign;
+    text-decoration: $txdeco;
+    color: $txcolor;
+}
+

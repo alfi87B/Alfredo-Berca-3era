@@ -1,0 +1,76 @@
+/**ejemplo**/
+footer{
+    width: 100%;
+    @include flex(column, nowrap, center, center, none);
+    background-color: $backg-principal;
+    padding: 0.75rem;
+    margin: 0;
+    .footer-section{
+        width: 100%;
+        max-width: 75rem;
+        @include flex(row, nowrap, space-between, start, none);
+        padding: 0.2rem;
+        margin: 0.5rem 0;
+        div{
+            width: 100%;
+            @include flex(column, nowrap, start, start, .2rem);
+            padding: 0.2rem;
+            margin: 0;
+            p{
+                @include text(1.5rem, bold, left, none, $color-principal);
+                padding: 0.2rem;
+                margin: 0;
+            }
+            ul{
+                @include flex(column, nowrap, start, start, .2rem);
+                padding: 0.2rem;
+                margin: 0;
+                li{
+                    list-style: none;
+                    a{
+                        @include text(1rem, 600, left, none, $color-principal);
+                        padding: 0.2rem;
+                        margin: 0;
+                    }
+                }
+            }
+            .medios-pago{
+                width: 100%;
+                @include grid(repeat(4, 4.0625rem), 1fr 1fr, "credit-card credit-card credit-card credit-card" "credit-card credit-card", 0.1rem, 0.5rem);
+                padding: 0.2rem;
+                margin: 0;
+                li{
+                    list-style: none;
+                    img{
+                        height: 3rem;
+                        padding: 0.2rem;
+                        margin: 0;
+                    }
+                }
+            }
+            .contacto{
+                @include flex(row, wrap, start, center, .2rem);
+                padding: 0.2rem;
+                margin: 0;
+                li{
+                    list-style: none;
+                    a{
+                        img{
+                            height: 3rem;
+                            padding: 0 0.5rem;
+                            margin: 5px 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-copy{
+        @include flex(row, wrap, center, center, .2rem);
+        padding: 0.2rem;
+        margin: 0.5rem 0;
+        p{
+            @include text(1rem, 400, left, none, $color-principal);
+        }
+    }
+}

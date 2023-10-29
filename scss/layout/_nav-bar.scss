@@ -1,0 +1,93 @@
+.section-logo{
+    width: 100%;
+    max-width: 75rem;
+    @include flex(row, wrap, space-between, center, none);
+    padding: 0.1rem;
+    margin: 0;
+    border-bottom: 1px solid $color-secundario;
+    div{
+        @include flex(row, nowrap, flex-start, center,none);
+        padding: 0;
+        margin: 0 0 0.5rem 0;
+        a{
+            @include text(1rem, 400, left, none, $color-principal);
+        }
+    }
+    ul{
+        @include flex(row, nowrap, flex-end, center,16px);
+        padding: 0.1rem;
+        margin:  0 0 0.5rem 0;
+        li{
+            list-style: none;
+            a{
+                @include text(1rem, 400, left, none, $color-principal);
+            }
+        }
+    }
+}
+.nav-bar{
+    width: 100%;
+    max-width: 75rem;
+    @include flex(row, nowrap, space-between, center, 1rem);
+    padding: 0.1rem;
+    margin: 0.5rem 0;
+    .logo-uno{
+        height: 4rem;
+    }
+    .logo-dos{
+        display: none;
+    }
+    section{
+        @include flex(row, nowrap, center, center, 1rem);
+        padding: 0.1rem;
+        margin: 0;
+        div{
+            ul{
+                @include flex(row, nowrap, space-between, center, 1rem);
+                padding: 0.1rem;
+                margin: 0;
+                li{
+                    list-style: none;
+                    a{
+                        @include text(2rem, 500, center, none, $color-principal);
+                    }
+                }
+            }
+        }
+        #toggle{
+            display: none;
+        }
+        label{
+            @extend #toggle;
+        }
+    }
+    div{
+        @include flex(row, nowrap, space-between, center, 0.1rem);
+        padding: 0.1rem;
+        margin: 0;
+        .buscador{
+            @include flex(row, nowrap, space-between, center, 1rem);
+            input{
+                flex: 1;
+                max-width: 12.5rem;
+                height: 1.75rem;
+                align-items: center;
+                border-radius: 14px;
+                padding-left: 1rem;
+            }
+            img{
+                width: auto;
+                height: 2.5rem;
+                padding: 0.1rem;
+                margin: 0;
+            }
+        }
+        .cart{
+            padding: 0.1rem 1rem;
+            margin: 0;
+            img{
+                height: 3rem;
+            }
+        }
+    }
+}
