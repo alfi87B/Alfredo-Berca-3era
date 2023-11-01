@@ -1,0 +1,7 @@
+main{
+    width: 100%;
+    @include flex(column, wrap, center, center, none);
+    background-color: $backg-secundario;
+    padding: 0.75rem;
+    margin: 0;
+}

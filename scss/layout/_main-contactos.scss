@@ -1,0 +1,111 @@
+main{
+    .contact-wrapper{
+        box-shadow: 0 0 1.25rem 0 rgba(255, 255, 255, .3);
+        padding: 0.2rem;
+        margin: 0;
+        .contact-form{
+            background-color: $backg-secundario;
+            form{
+                @include grid(repeat(1fr,1fr), repeat(1fr,1fr, 1fr, 1fr), "nombre email" "telefono motivo", 1rem, 1rem);
+                .mensaje, .enviar{
+                    grid-column: 1/3;
+                }
+                p{
+                padding: 1rem;
+                margin: 0;
+                label{
+                    font-size: 1rem;
+                    font-weight: 300;
+                    @include pad;
+                    }
+                input{
+                    color: $color-texto;
+                    width: 100%;
+                    padding: 0.7rem;
+                    background-color: $backg-secundario;
+                    outline: 0;
+                    border: none;
+                    @include linea-top;
+                    }
+                textarea{
+                    @extend input;
+                    }
+                button{
+                    @extend input;
+                    background-color: $color-secundario;
+                    color: $color-principal;
+                    border: 0;
+                    text-transform: uppercase;
+                    padding: 1rem;
+                    margin: 0;
+                    }
+                    &:focus{
+                        color:$color-sombras;
+                        transition: background-color 1s ease-out;
+                        outline: 0;
+                    }
+                }
+            }
+        }
+        /**formato pantallas pequeñas**/
+        .contact-info{
+            width: 100%;
+            background-color: $backg-principal;
+            @include flex(column, nowrap, start, center, 0.5rem);
+            padding: 0.2rem;
+            margin: 0;
+            h4{
+                width: 100%;
+                font-size: 2rem;
+                color: $color-principal;
+                text-align: center;
+                @include linea-bottom;
+                @include pad;
+            }
+            div{
+                width: 100%;
+                @include flex(column, nowrap, center, center, 0.5rem);
+                padding: 0.5rem;
+                margin: 0;
+                .zpl-mail{
+                    display: flex;
+                    width: 100%;
+                    a{
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+                div{
+                    width: 100%;
+                    @include flex(row, nowrap, space-between, center, 0.2rem);
+                    @include pad;
+                    a{
+                        img{
+                            width: 100%;
+                            height: 4rem;
+                        }
+                    }
+                }
+            }
+            p{
+                color: white;
+                width: 97%;
+                font-size: 1rem;
+                padding: 0.5rem;
+                margin: 0 0 1rem 0;
+            }
+        }
+    }
+    article{
+        padding: 0.2rem;
+        margin: 0 0 1rem 0;
+        img{
+            width: 100%;
+            max-width: 75rem;
+            height: auto;
+            @include pad;
+        }
+    }
+}

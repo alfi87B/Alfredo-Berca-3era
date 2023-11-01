@@ -1,0 +1,61 @@
+@import "./components/cards";
+main{
+    .img-titulo{
+            width: 100%;
+            max-width: 75rem;
+            height: auto;
+            @include flex(column, nowrap, center, center, none);
+            @include pad;
+            .una-linea{
+                width: 100%;
+                height: auto;
+                padding: 0.1rem;
+                margin: 0 0 1rem 0;
+            }
+            .dos-lineas{
+                display: none;
+            }
+    }
+    .filtro{
+        width: 100%;
+        max-width: 75rem;
+        @include flex(row, wrap, start, start, none);
+        @include linea-top;
+        padding: 0.5rem;
+        margin: 0;
+        button{
+            @include text(1rem, 400, center, none, $color-texto);
+            padding: 0.5rem;
+            margin: 0;
+            border-color: $color-secundario;
+            border-radius: 10%;
+        }
+    }
+    .filtro-div{
+        background-color: rgba(0, 0, 0, 0.63);
+    }
+    .tienda-produ{
+        max-width: 75rem;
+        @include flex(row, wrap, center, center, none);
+        @include pad;
+        section{
+            width: 100%;
+            @include flex(row, wrap, space-around, center, .3rem);
+            padding: 0.2rem 0rem 0 0.5rem;
+            margin: 0;
+            .card-cont{
+                display: flex;
+                @include pad;
+            }
+        }
+    }
+    .banner-secundario{
+        max-width: 75rem;
+        display: flex;
+        @include pad;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

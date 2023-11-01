@@ -16,6 +16,12 @@
     column-gap: $cgap;
     row-gap: $rgap;
 }
+@mixin autogrid {
+    display: grid;
+    grid-auto-columns: minmax(17.5rem, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+}
 
 @mixin text($fsize, $weight, $txalign, $txdeco, $txcolor){
     font-size: $fsize;
@@ -24,4 +30,14 @@
     text-decoration: $txdeco;
     color: $txcolor;
 }
-
+@mixin pad{
+    margin: 0;
+    padding: 0.2rem;
+}
+@mixin linea-top{
+    border-top: 2px solid $color-secundario;
+}
+@mixin linea-bottom{
+    border-bottom: 2px solid $color-secundario;
+}
+    

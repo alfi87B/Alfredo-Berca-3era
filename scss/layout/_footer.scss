@@ -14,37 +14,31 @@ footer{
         div{
             width: 100%;
             @include flex(column, nowrap, start, start, .2rem);
-            padding: 0.2rem;
-            margin: 0;
+            @include pad;
             p{
                 @include text(1.5rem, bold, left, none, $color-principal);
-                padding: 0.2rem;
-                margin: 0;
+                @include pad;
             }
             ul{
                 @include flex(column, nowrap, start, start, .2rem);
-                padding: 0.2rem;
-                margin: 0;
+                @include pad;
                 li{
                     list-style: none;
                     a{
                         @include text(1rem, 600, left, none, $color-principal);
-                        padding: 0.2rem;
-                        margin: 0;
+                        @include pad;
                     }
                 }
             }
             .medios-pago{
                 width: 100%;
                 @include grid(repeat(4, 4.0625rem), 1fr 1fr, "credit-card credit-card credit-card credit-card" "credit-card credit-card", 0.1rem, 0.5rem);
-                padding: 0.2rem;
-                margin: 0;
+                @include pad;
                 li{
                     list-style: none;
                     img{
                         height: 3rem;
-                        padding: 0.2rem;
-                        margin: 0;
+                        @include pad;
                     }
                 }
             }

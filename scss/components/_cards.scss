@@ -1,6 +1,7 @@
 .card {
     width: 17.5rem;
     height: 38rem;
+    @include flex(column, nowrap, center, center, none);
     border-radius:1%;
     overflow: hidden;
     box-shadow: 2px 2px 5px grey;

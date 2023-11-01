@@ -2,8 +2,7 @@
     width: 100%;
     max-width: 75rem;
     @include flex(row, wrap, space-between, center, none);
-    padding: 0.1rem;
-    margin: 0;
+    @include pad;
     border-bottom: 1px solid $color-secundario;
     div{
         @include flex(row, nowrap, flex-start, center,none);
@@ -39,17 +38,15 @@
     }
     section{
         @include flex(row, nowrap, center, center, 1rem);
-        padding: 0.1rem;
-        margin: 0;
+        @include pad;
         div{
             ul{
                 @include flex(row, nowrap, space-between, center, 1rem);
-                padding: 0.1rem;
-                margin: 0;
+                @include pad;
                 li{
                     list-style: none;
                     a{
-                        @include text(2rem, 500, center, none, $color-principal);
+                        @include text(2rem, 400, center, none, $color-principal);
                     }
                 }
             }
@@ -78,8 +75,7 @@
             img{
                 width: auto;
                 height: 2.5rem;
-                padding: 0.1rem;
-                margin: 0;
+                @include pad;
             }
         }
         .cart{

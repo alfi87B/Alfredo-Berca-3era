@@ -11,10 +11,19 @@
 @import "./layout/nav-bar";
 
 /**MAINS**/
+@import "./layout/main";
 @import "./layout/main-index";
 @import "./components/cards";
 @import "./layout/main-productos";
 @import "./layout/main-contactos";
+@import "./layout/main-talles";
+@import "./layout/main-locales";
+@import "./layout/main-politicas";
+
 
 /**FOOTER**/
 @import "./layout/footer";
+
+
+/**Media Queries**/
+@import "./layout/media/media768"
