@@ -1,0 +1,49 @@
+main{
+    .talles{
+        @include flex(row, wrap, center, center, 1rem);
+        padding: 1rem 0;
+        margin: 0;
+        article{
+            @include flex(column, nowrap, center, center, 1rem);
+            @include pad;
+            img{
+                width: 280px;
+                height: auto;
+            }
+            table{
+                table-layout: fixed;
+                border-collapse: collapse;
+                thead{
+                    background-color: black;
+                    tr{
+                        th{
+                            color: white;
+                            font-size: 0.8rem;
+                            font-weight: 700;
+                            text-align: center;
+                            padding: 0.5rem 1rem;
+                            border: 1px solid   rgb(190, 190, 190);
+                        }
+                    }
+                }
+                tbody{
+                    background-color: rgb(235, 235, 235);
+                    tr{
+                        td{
+                            color: black;
+                            font-size: 0.8rem;
+                            font-weight: 500;
+                            text-align: center;
+                            padding: 0.5rem 1rem;
+                            border: 1px solid   rgb(190, 190, 190);
+                        }
+                        &:hover{
+                            background-color: #7f2ff6a8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}

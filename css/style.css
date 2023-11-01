@@ -2,7 +2,6 @@
 /****Primero llamar siempre > variable, mixins y mapas = utilities****/
 /**COLORES*/
 /*OTROS*/
-/*background-imagen: ;*/
 /**ejemplos**/
 /***segunda es la carpeta base**/
 /* reset y modiificaciones a etiquetas de manera general */
@@ -597,6 +596,51 @@ main article {
     height: auto;
     margin: 0;
     padding: 0.2rem; }
+
+main .talles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  margin: 0; }
+  main .talles article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0.2rem; }
+    main .talles article img {
+      width: 280px;
+      height: auto; }
+    main .talles article table {
+      table-layout: fixed;
+      border-collapse: collapse; }
+      main .talles article table thead {
+        background-color: black; }
+        main .talles article table thead tr th {
+          color: white;
+          font-size: 0.8rem;
+          font-weight: 700;
+          text-align: center;
+          padding: 0.5rem 1rem;
+          border: 1px solid #bebebe; }
+      main .talles article table tbody {
+        background-color: #ebebeb; }
+        main .talles article table tbody tr td {
+          color: black;
+          font-size: 0.8rem;
+          font-weight: 500;
+          text-align: center;
+          padding: 0.5rem 1rem;
+          border: 1px solid #bebebe; }
+        main .talles article table tbody tr:hover {
+          background-color: #7f2ff6a8; }
 
 /**FOOTER**/
 /**ejemplo**/
