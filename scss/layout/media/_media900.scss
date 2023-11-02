@@ -1,0 +1,45 @@
+@media (max-width: 900px){
+    .nav-bar{
+        section{
+            div{
+                ul{
+                    gap: 0.4rem;
+                    li{
+                        a{
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+/***/
+main{
+    background-image:none;
+    background-color: $backg-secundario;
+    .section-container{
+        h1{
+            font-size: 2.5rem;
+        }
+        h2{
+            font-size: 2.2rem;
+        }
+        .seguinos-redes{
+            img{
+                height: 3.5rem;
+            }
+        }
+    }
+}
+/***/
+footer{
+    .footer-section{
+        div{
+            p{
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+}

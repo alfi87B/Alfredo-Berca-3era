@@ -4,6 +4,9 @@
 // }
 
 main{
+    .carousel-index{
+        max-width: 75rem;
+    }
     .section-container{
         width: 100%;
         max-width: 75rem;
@@ -13,13 +16,12 @@ main{
         h1{
             width: 100%;
             @include text(3rem, 700, center, none, $color-texto);
-            @include linea-top;
             padding: 0.1rem;
             margin: 0 0 1rem 0;
         }
         .destacados{
             width: 100%;
-            @include flex(row, nowrap, center, center, 2rem);
+            @include flex(row, nowrap, space-around, center, 2rem);
             @include pad;
         }
         h2{
@@ -39,6 +41,10 @@ main{
                 width: auto;
                 height: 5rem;
                 @include pad;
+                cursor: pointer;
+                &:hover{
+                    transform: scale(1.1)
+                }
             }
         }
         .seccion-info{
@@ -62,7 +68,7 @@ main{
         .quienes-info{
             width: 100%;
             max-width: 75rem;
-            @include grid(repeat(2,1fr), 1fr 1fr, "info-img1 info-txt1" "info-img2 info-txt2", 1rem, 1rem);
+            @include grid(repeat(2,1fr), repeat(2,1fr), "info-img1 info-txt1" "info-txt2 info-img2", 1rem, 1rem);
             @include pad;
             img{
                 width: 100%;
@@ -72,6 +78,7 @@ main{
                 @include pad;
             }
             p{
+                height: auto;
                 @include text(1.1rem, 400, left, none, $color-texto);
                 @include pad;
             }

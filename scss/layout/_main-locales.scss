@@ -1,0 +1,46 @@
+main{
+    .mapa-container{
+        width: 100%;
+        max-width: 75rem;
+        @include flex(row, wrap, center, start, 1rem);
+        @include pad;   
+        .mapa{
+            width: 100%;
+            @include pad;
+        }
+        .lista-tiendas{
+            width: 100%;
+            background-color: black;
+            @include flex(row, wrap, center, center, 1rem);
+            padding: 1rem;
+            overflow: hidden;
+            ul{
+                width: 100%;
+                @include flex(row, wrap, space-around, center, 1rem);
+                @include pad;
+                li{
+                    width: 17rem;
+                    list-style: none;
+                    border: 1px solid $color-secundario;
+                    padding: 1rem;
+                    .nom-tienda{
+                        width: 100%;
+                        @include text(1rem, 700, left, none, white);
+                        @include linea-bottom;
+                        padding: 0.3rem 0;
+                        margin: 1rem 0;
+                    }
+                    p{
+                        @include text(1rem, 400, left, none, white);
+                        padding: 1rem 0;
+                    }
+                    .ubi-tienda{
+                        width: 100%;
+                        @include text(1rem, 700, left, none, white);
+                        @include pad;
+                    }
+                }
+            }
+        }
+    }
+}

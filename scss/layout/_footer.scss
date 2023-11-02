@@ -3,7 +3,7 @@ footer{
     width: 100%;
     @include flex(column, nowrap, center, center, none);
     background-color: $backg-principal;
-    padding: 0.75rem;
+    padding: 0.75rem 3rem;
     margin: 0;
     .footer-section{
         width: 100%;
@@ -32,7 +32,8 @@ footer{
             }
             .medios-pago{
                 width: 100%;
-                @include grid(repeat(4, 4.0625rem), 1fr 1fr, "credit-card credit-card credit-card credit-card" "credit-card credit-card", 0.1rem, 0.5rem);
+                @include flex(row, wrap, start, start, 0.5rem);
+                // @include grid(repeat(4, 4.0625rem), 1fr 1fr, "credit-card credit-card credit-card credit-card" "credit-card credit-card", 0.1rem, 0.5rem);
                 @include pad;
                 li{
                     list-style: none;
@@ -43,7 +44,7 @@ footer{
                 }
             }
             .contacto{
-                @include flex(row, wrap, start, center, .2rem);
+                @include flex(row, wrap, start, start, 0.5rem);
                 padding: 0.2rem;
                 margin: 0;
                 li{

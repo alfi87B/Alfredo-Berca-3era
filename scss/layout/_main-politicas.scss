@@ -1,0 +1,35 @@
+main{
+    .politica{
+        max-width: 75rem;
+        @include flex(column, nowrap, center, center, 1rem);
+        @include pad;
+        h1{
+            width: 100%;
+            @include text(2rem, 700, center, none, black);
+            @include linea-bottom;
+            @include pad;
+            padding-bottom: 1rem;
+        }
+        article{
+            width: 100%;
+            @include flex(column, nowrap, start, start, 0.5rem);
+            @include linea-bottom;
+            @include pad;
+            padding-bottom: 1rem;
+            h2{
+                @include text(1.2rem, bold, left, none, black);
+                @include pad;
+            }
+            h3{
+                @include text(1.2rem, 400, left, none, black);
+                @include pad;
+            }
+            .form-pol{
+                    @include text(1.2rem, 600, left, none, black);
+            }
+            span{
+                font-weight: bold;
+            }
+        }
+    }
+}

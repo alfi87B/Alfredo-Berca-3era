@@ -22,7 +22,7 @@ main{
                     color: $color-texto;
                     width: 100%;
                     padding: 0.7rem;
-                    background-color: $backg-secundario;
+                    background-color: rgb(243, 240, 240);
                     outline: 0;
                     border: none;
                     @include linea-top;
@@ -38,11 +38,9 @@ main{
                     text-transform: uppercase;
                     padding: 1rem;
                     margin: 0;
-                    }
-                    &:focus{
-                        color:$color-sombras;
-                        transition: background-color 1s ease-out;
-                        outline: 0;
+                        &:hover{
+                        background-color: $color-sombras;
+                        }
                     }
                 }
             }

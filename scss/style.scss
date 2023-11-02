@@ -1,6 +1,7 @@
 /****Primero llamar siempre > variable, mixins y mapas = utilities****/
 @import "./utilities/variables";
 @import "./utilities/mixins";
+@import "./utilities/maps";
 
 
 /***segunda es la carpeta base**/
@@ -26,4 +27,8 @@
 
 
 /**Media Queries**/
-@import "./layout/media/media768"
+@import "./layout/media/media1220";
+@import "./layout/media/media1024";
+@import "./layout/media/media900";
+@import "./layout/media/media768";
+@import "./layout/media/media320";
