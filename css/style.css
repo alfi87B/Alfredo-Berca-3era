@@ -28,7 +28,7 @@ header {
   padding: 0.75rem 3rem;
   margin: 0; }
 
-.section-logo {
+.section-log {
   width: 100%;
   max-width: 75rem;
   display: flex;
@@ -40,7 +40,7 @@ header {
   margin: 0;
   padding: 0.2rem;
   border-bottom: 1px solid #7D2FF6; }
-  .section-logo div {
+  .section-log div {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -49,13 +49,13 @@ header {
     gap: none;
     padding: 0;
     margin: 0 0 0.5rem 0; }
-    .section-logo div a {
+    .section-log div a {
       font-size: 1rem;
       font-weight: 400;
       text-align: left;
       text-decoration: none;
       color: white; }
-  .section-logo ul {
+  .section-log ul {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -64,9 +64,9 @@ header {
     gap: 16px;
     padding: 0.1rem;
     margin: 0 0 0.5rem 0; }
-    .section-logo ul li {
+    .section-log ul li {
       list-style: none; }
-      .section-logo ul li a {
+      .section-log ul li a {
         font-size: 1rem;
         font-weight: 400;
         text-align: left;
@@ -97,6 +97,10 @@ header {
     gap: 1rem;
     margin: 0;
     padding: 0.2rem; }
+    .nav-bar section #toggle {
+      display: none; }
+    .nav-bar section label {
+      display: none; }
     .nav-bar section div ul {
       display: flex;
       flex-direction: row;
@@ -117,8 +121,6 @@ header {
           cursor: pointer; }
           .nav-bar section div ul li a:hover {
             font-weight: bold; }
-    .nav-bar section #toggle, .nav-bar section label {
-      display: none; }
   .nav-bar div {
     display: flex;
     flex-direction: row;
@@ -141,7 +143,8 @@ header {
         max-width: 12.5rem;
         min-width: 4.6875rem;
         height: 1.75rem;
-        align-items: center;
+        font-size: 1rem;
+        align-items: left;
         border-radius: 14px;
         padding-left: 1rem; }
       .nav-bar div .buscador img {
@@ -175,7 +178,6 @@ main {
   margin: 0;
   background-image: linear-gradient(to right bottom, #ececec, #e7e7e7, #e1e1e2, #dcdcdd, #d6d7d8, #d3d6da, #d1d5dd, #cfd4df, #d3d6e9, #dbd6f1, #e7d5f6, #f6d4f8); }
 
-/*ejemplo*/
 main .carousel-index {
   max-width: 75rem; }
 
@@ -458,6 +460,12 @@ main .img-titulo {
   main .img-titulo .una-linea {
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: none;
     padding: 0.1rem;
     margin: 0 0 1rem 0; }
   main .img-titulo .dos-lineas {
@@ -485,9 +493,6 @@ main .filtro {
     margin: 0;
     border-color: #7D2FF6;
     border-radius: 10%; }
-
-main .filtro-div {
-  background-color: rgba(0, 0, 0, 0.63); }
 
 main .tienda-produ {
   max-width: 75rem;
@@ -651,6 +656,7 @@ main .talles {
       width: 280px;
       height: auto; }
     main .talles article table {
+      width: 100%;
       table-layout: fixed;
       border-collapse: collapse; }
       main .talles article table thead {
@@ -909,20 +915,29 @@ footer {
       color: white; }
 
 /**Media Queries**/
+@media (max-width: 1220px) {
+  /**HEADER**/
+  /**MAIN**/
+  /**FOOTER**/ }
+
 @media (max-width: 1024px) {
   .nav-bar section div ul li a {
     font-size: 1.5rem; }
   .nav-bar div .buscador img {
     height: 2.5rem;
     width: auto; }
-  .nav-bar div .cart img {
-    height: 2.5rem;
-    width: auto; } }
+  .nav-bar div .cart {
+    padding: 0.2rem; }
+    .nav-bar div .cart img {
+      height: 2.5rem;
+      width: auto; }
+  /**MAIN**/
+  /**FOOTER**/ }
 
 @media (max-width: 900px) {
-  .nav-bar section div ul {
+  header .nav-bar section div ul {
     gap: 0.4rem; }
-    .nav-bar section div ul li a {
+    header .nav-bar section div ul li a {
       font-size: 1.2rem; }
   /***/
   main {
@@ -943,10 +958,10 @@ footer {
   header {
     padding: 0.75rem 1rem;
     gap: 0rem; }
-  .section-logo div a {
-    font-size: .8rem; }
-  .section-logo ul li a {
-    font-size: .8rem; }
+  .section-log div a {
+    font-size: 0.9em; }
+  .section-log ul li a {
+    font-size: 0.9rem; }
   .nav-bar {
     width: 100%;
     display: flex;
@@ -970,12 +985,18 @@ footer {
       padding: 0.5rem 0;
       margin: 0;
       border-bottom: 2px solid #7D2FF6; }
-    .nav-bar section div ul {
-      width: 100%;
-      gap: 0.5rem;
-      padding: 1rem 0.2rem; }
-      .nav-bar section div ul li a {
-        font-size: 1.8rem; }
+    .nav-bar section {
+      width: 100%; }
+      .nav-bar section div {
+        width: 90%; }
+        .nav-bar section div ul {
+          justify-content: space-between;
+          width: 100%;
+          gap: 0.5rem;
+          padding: 1rem 0.2rem; }
+          .nav-bar section div ul li a {
+            font-size: 2rem; }
+  /*MAIN*/
   main {
     padding: 0.75rem 1rem; }
     main .section-container .destacados {
@@ -1004,6 +1025,20 @@ footer {
         grid-row: 4/5; }
       main .section-container .quienes-info p {
         font-size: 1.5rem; }
+    main .img-titulo .una-linea {
+      display: none; }
+    main .img-titulo .dos-lineas {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      gap: none;
+      padding: 0.1rem;
+      margin: 0 0 1rem 0; }
+  /**FOOTER**/
   footer {
     padding: 0.75rem 1rem; } }
 
@@ -1015,7 +1050,23 @@ footer {
     display: grid;
     grid-template-columns: 1.5fr 1fr; } }
 
-@media (min-width: 650px) {
+@media (max-width: 650px) {
+  header {
+    margin: 0;
+    padding: 0.2rem;
+    gap: 0rem; }
+  .section-log {
+    justify-content: center; }
+    .section-log div {
+      display: none; }
+    .section-log ul {
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem; }
   .nav-bar section {
     width: 100%;
     display: flex;
@@ -1031,10 +1082,10 @@ footer {
       cursor: pointer;
       align-items: center;
       justify-content: center;
-      padding: 1rem 0.2rem; }
+      padding: 0rem 0.2rem; }
       .nav-bar section label i {
         font-size: 3rem; }
-    .nav-bar section #toggle:checked ~ div, .nav-bar section label:checked ~ div {
+    .nav-bar section #toggle:checked ~ div {
       height: 100%; }
     .nav-bar section div {
       width: 100%;
@@ -1076,4 +1127,35 @@ footer {
       width: 20%;
       padding: 0; }
       .nav-bar div .cart img {
-        height: 3rem; } }
+        height: 3rem; }
+  /**MAIN**/
+  main {
+    margin: 0;
+    padding: 0.2rem; }
+    main .section-container .quienes-info p {
+      font-size: 1.5rem; }
+  /**FOOTER**/
+  footer {
+    margin: 0;
+    padding: 0.2rem; }
+    footer .footer-section {
+      flex-direction: column;
+      gap: 1rem; }
+      footer .footer-section div {
+        border-bottom: 2px solid #7D2FF6; }
+        footer .footer-section div ul {
+          gap: 16px;
+          padding: 0 1rem 0.5rem 0; }
+        footer .footer-section div .medio-pago {
+          padding: 0 1rem 0.5rem 0; }
+          footer .footer-section div .medio-pago li img {
+            height: 2rem; }
+        footer .footer-section div .contacto li a img {
+          height: 2rem; }
+    footer .footer-copy {
+      justify-content: center; } }
+
+@media (max-width: 375px) {
+  /**HEADER**/
+  /**MAIN**/
+  /**FOOTER**/ }

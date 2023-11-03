@@ -9,6 +9,7 @@ main{
             .una-linea{
                 width: 100%;
                 height: auto;
+                @include flex(column, nowrap, center, center, none);
                 padding: 0.1rem;
                 margin: 0 0 1rem 0;
             }
@@ -30,9 +31,6 @@ main{
             border-color: $color-secundario;
             border-radius: 10%;
         }
-    }
-    .filtro-div{
-        background-color: rgba(0, 0, 0, 0.63);
     }
     .tienda-produ{
         max-width: 75rem;
