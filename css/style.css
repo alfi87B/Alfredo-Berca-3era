@@ -1,10 +1,4 @@
 @charset "UTF-8";
-/****Primero llamar siempre > variable, mixins y mapas = utilities****/
-/**COLORES*/
-/*OTROS*/
-/**ejemplos**/
-/***segunda es la carpeta base**/
-/* reset y modiificaciones a etiquetas de manera general */
 * {
   margin: 0;
   padding: 0;
