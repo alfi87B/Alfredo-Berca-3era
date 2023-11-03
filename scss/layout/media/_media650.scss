@@ -87,8 +87,14 @@ main{
             }
         }
     }
-}
-/**FOOTER**/
+    .talles{
+        @include pad;
+            table{
+                width: 100%
+            }
+        }
+    }
+    /**FOOTER**/
 footer{
     @include pad;
     .footer-section{
@@ -125,3 +131,4 @@ footer{
     }
 }
 }
+

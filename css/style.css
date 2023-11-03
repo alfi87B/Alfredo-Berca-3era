@@ -656,7 +656,6 @@ main .talles {
       width: 280px;
       height: auto; }
     main .talles article table {
-      width: 100%;
       table-layout: fixed;
       border-collapse: collapse; }
       main .talles article table thead {
@@ -1134,6 +1133,11 @@ footer {
     padding: 0.2rem; }
     main .section-container .quienes-info p {
       font-size: 1.5rem; }
+    main .talles {
+      margin: 0;
+      padding: 0.2rem; }
+      main .talles table {
+        width: 100%; }
   /**FOOTER**/
   footer {
     margin: 0;
