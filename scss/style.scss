@@ -2,15 +2,11 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
 @import "./utilities/maps";
-
-
-/***segunda es la carpeta base**/
+/***reset**/
 @import "./base/reset";
-
 /**HEADER+NAV**/
 @import "./layout/header";
 @import "./layout/nav-bar";
-
 /**MAINS**/
 @import "./layout/main";
 @import "./layout/main-index";
@@ -20,16 +16,13 @@
 @import "./layout/main-talles";
 @import "./layout/main-locales";
 @import "./layout/main-politicas";
-
-
 /**FOOTER**/
 @import "./layout/footer";
-
-
 /**Media Queries**/
-@import "./layout/media/media1220";
 @import "./layout/media/media1024";
 @import "./layout/media/media900";
 @import "./layout/media/media768";
 @import "./layout/media/media650";
 @import "./layout/media/media375";
+/**404**/
+@import "./layout/error"

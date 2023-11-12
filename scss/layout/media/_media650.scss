@@ -76,8 +76,6 @@ header{
         }
     }
 }
-
-/**MAIN**/
 main{
     @include pad;
     .section-container{
@@ -94,7 +92,6 @@ main{
             }
         }
     }
-    /**FOOTER**/
 footer{
     @include pad;
     .footer-section{

@@ -1,4 +1,3 @@
-/**ejemplo**/
 footer{
     width: 100%;
     @include flex(column, nowrap, center, center, none);
@@ -33,7 +32,6 @@ footer{
             .medios-pago{
                 width: 100%;
                 @include flex(row, wrap, start, start, 0.5rem);
-                // @include grid(repeat(4, 4.0625rem), 1fr 1fr, "credit-card credit-card credit-card credit-card" "credit-card credit-card", 0.1rem, 0.5rem);
                 @include pad;
                 li{
                     list-style: none;
