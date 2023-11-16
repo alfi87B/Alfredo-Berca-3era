@@ -1,6 +1,7 @@
 
 @media (max-width: 768px){
 header{
+    position: relative;
     padding: 0.75rem 1rem;
     gap: 0rem;
 }
@@ -101,6 +102,9 @@ main{
 }
 footer{
     padding: 0.75rem 1rem;
+    .footer-error{
+        min-height: 35vh;
+    }
 }
 }
 @media (min-width: 700px){
